@@ -1,9 +1,7 @@
-# GENEX
+# Aegis
 <p align="center">
-    <a href="https://genex.app/" target="_blank">
-        <img src="https://genex.app/wp-content/uploads/2021/09/white_gnx_name-1.gif" alt="logo" width="400"/>
     </a>
-    <h4 align="center">An asset valuation engine for capital market securities.</h4>
+    <h4 align="center">Multi-dimensional asset valuation engine for capital market securities.</h4>
 </p>
 
 <div align="center">
@@ -30,7 +28,7 @@
 
 # What is Aegis?
 
-`Aegis` is an asset valuation and recommendation engine that uses many dimensions to create a price profile for an asset, or assets in bulk. Dimensions are broken down into components:
+`Aegis` is an asset valuation and recommendation engine that uses many dimensions to create a price profile for an asset, or assets in bulk. "Dimensions" are general in nature, and can be broken down into "components" as follows:
 * Charts
     * Boundaries
     * Indicators
@@ -52,7 +50,7 @@
 * Rates (incomplete)
 * Sentiment (incomplete)
 
-These dimensions and their relevant components allow `Aegis` to create a hollistic picture not only of an asset according to their book value, but also in accordance with the market, competing products, the macro outlook, and more.
+These dimensions and their relevant components allow `Aegis` to hollistically evaluated most assets, and not only according to their accounting book value, but also in accordance with the market, similar-risk products, macro conditions, and more.
 
 # Getting Started
 `Aegis` uses common data science libraries such as `pandas` for most of its needs.
@@ -92,15 +90,14 @@ msft_risk = aegis.equity.risk.Risk.sharpe("MSFT")
 # Using 'macro' dimension
 spain_labour = aegis.macro.labour.Labour.unemployment("Spain")
 jpn_gdp = aegis.macro.gdp.GDP.gdp("Japan", type = "real")
-
 ```
 
 Feel free to experiment and combine indicators to create valuable insights into the markets.
 
 ### Data Procurement
-Data procurement is not included in Aegis naturally. I am currently building a package to integrate Aegis with the existing (Alpaca Markets API)[https://github.com/alpacahq/alpaca-trade-api-python].
+Data procurement is not included in Aegis naturally. I am currently building a package to integrate Aegis with the existing [Alpaca Markets API](https://github.com/alpacahq/alpaca-trade-api-python).
 
 Use whatever is comfortable for you.
 
 ### License
-Aegis is released under (XYZ License)[https://github.com/itchysnake/aegis/blob/master/LICENSE]
+Aegis is released under [MIT License](https://github.com/itchysnake/aegis/blob/master/LICENSE).
