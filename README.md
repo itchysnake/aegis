@@ -28,9 +28,14 @@
 
 # What is Aegis?
 
-`Aegis` is an open source asset valuation engine that uses many dimensions to create a price profile for an asset. A "dimension" is a general category of evaluation. This evaluation may or may not be a _valuation_ as it could just relate to a general fact/figure such as employment statistics. Dimensions are further broken down into components. For example "charts" is a dimension which is comprised of components such as technical indicators, trading psychology, boundaries, and patterns. 
+`Aegis` is an open source asset valuation engine that uses many dimensions to create a price profile for an asset. A **dimension** is a general category of evaluation. This evaluation may or may not be a _valuation_ as it could just relate to a general fact/figure such as employment statistics.
 
-Dimensions exist as sub-packages within the Aegis package and can/should be combined by the developer with various other dimensions/components to create hollistic asset valuation. The dimensions and their components are broken down as follows:
+**Dimensions** are further broken down into components. For example "charts" is a **dimension** which is comprised of **components**: technical indicators, trading psychology, boundaries, and patterns. 
+
+> In terms of package hierarchy: Aegis > Dimension > Component > Class > Function
+> E.g. Aegis > Equity > Risk > Risk > Sharpe()
+
+**Dimensions** exist as sub-packages within the Aegis package and can/should be combined by the developer with various other dimensions/components to create hollistic asset valuation. The dimensions and their components are broken down as follows:
 * Charts (incomplete)
     * Bounds (e.g. all_time_high, all_time_low))
     * Indicators (e.g. RSI, OBV, SMA)
@@ -55,6 +60,7 @@ Dimensions exist as sub-packages within the Aegis package and can/should be comb
 These dimensions and their relevant components allow `Aegis` to evaluate most assets not only according to their accounting book value, but also in accordance with the market, similar-risk products, macro conditions, and more.
 
 # Getting Started
+
 `Aegis` uses common data science libraries such as `pandas` for most of its needs.
 
 ### Installation
@@ -96,10 +102,10 @@ jpn_gdp = aegis.macro.gdp.GDP.gdp("Japan", type = "real")
 
 Feel free to experiment and combine indicators to create valuable insights into the markets.
 
-### Data Procurement
-Data procurement is not included in Aegis naturally. I am currently building a package to integrate Aegis with the existing [Alpaca Markets API](https://github.com/alpacahq/alpaca-trade-api-python).
+# Data Procurement
 
-Use whatever is comfortable for you.
+Data procurement is not included in Aegis natively. I am currently building a package to integrate Aegis with the existing [Alpaca Markets API](https://github.com/alpacahq/alpaca-trade-api-python). At this time you must use whatever is comfortable for you.
 
-### License
-Aegis is released under [MIT License](https://github.com/itchysnake/aegis/blob/master/LICENSE).
+# License
+
+Aegis is released under the [MIT License](https://github.com/itchysnake/aegis/blob/master/LICENSE).
