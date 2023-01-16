@@ -4,3 +4,4 @@ venv/
 *.pyc
 scripts/alpaca/config.py
 notes/
+archive/

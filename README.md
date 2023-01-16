@@ -33,6 +33,7 @@
 **Dimensions** are further broken down into components. For example "charts" is a **dimension** which is comprised of **components**: technical indicators, trading psychology, boundaries, and patterns. 
 
 > In terms of package hierarchy: Aegis > Dimension > Component > Class > Function
+
 > E.g. Aegis > Equity > Risk > Risk > Sharpe()
 
 **Dimensions** exist as sub-packages within the Aegis package and can/should be combined by the developer with various other dimensions/components to create hollistic asset valuation. The dimensions and their components are broken down as follows:

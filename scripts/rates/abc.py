@@ -1,6 +1,6 @@
 from macro.gdp import GDP
 
-def current_situation(country):
+def gdp(country):
     nominal = GDP.gdp(country)
     real = GDP.gdp(country, "real")
     
