@@ -1,0 +1,10 @@
+appdirs==1.4.4
+charset-normalizer==3.0.1
+numpy==1.24.1
+pandas==1.5.2
+pycparser==2.21
+python-dateutil==2.8.2
+pytz==2022.7.1
+six==1.16.0
+urllib3==1.26.14
+webencodings==0.5.1
