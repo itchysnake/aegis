@@ -1,15 +1,20 @@
 from setuptools import setup, find_packages
 
 setup(
-  name="aegis-engine",
-  version="1.0.0",
+  name="aegis_engine",
+  version="1.0.7",
   license="MIT",
   author="Bailey de Villiers",
   author_email="bailey.devilliers@gmail.com",
-  packages=find_packages("scripts"),
-  package_dir={'': "scripts"},
+  description = "Capital market asset valuation engine.",
+  long_description=open("README.md", 'r').read(),
+  long_description_content_type='text/markdown',
   url='https://github.com/itchysnake/aegis',
-  keywords="digital marketing",
+  keywords="",
+
+  # Finds all sub-packages
+  packages = find_packages(),
+  package_dir={"":"."},
   install_requires=[
     "numpy>=1.2",
     "pandas>=1.5",

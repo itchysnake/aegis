@@ -1,4 +1,4 @@
-import macro.config as monfig
+import macro.endpoints as monfig
 import macro.utils as mutils
 
 class Price:

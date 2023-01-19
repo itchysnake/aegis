@@ -1,6 +1,3 @@
-# Files
-notes/
-archive/
 
 # Distribution
 build/
@@ -23,12 +20,10 @@ config.*
 
 # Environments
 venv/
-dvenv/
+denv/
 .env
 
 # Distribution / Packaging
-setup.cfg
-setup.py
 dist/
 sdist/
 build/
